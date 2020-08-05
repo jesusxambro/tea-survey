@@ -21,12 +21,42 @@
 <body>
 <form id="survey-form">
     <!-- Name entry  -->
-    <label id="name-label" id="name" for="fname">Name:</label><br>
-    <input type="text" id="fname" name="fname"  required="true" placeholder="John Doe"><br>
-    <label id="email-label" for="email">Email:</label><br>
-    <input type="email" id="email"  required="true" placeholder="johndoe@gmail.com" name="email"><br>
-    <label id="number-label" for="number" id="number">Your Age</label><br>
-    <input type="number" required="true" min="17" max="99" placeholder="Age" id="number" placeholder="24"><br>
+    <label 
+        id="name-label" 
+        id="name" 
+        for="name">Name:</label><br>
+    <input 
+    type="text" 
+    id="name" 
+    name="name"  
+    required 
+    placeholder="John Doe"><br>
+
+    <label 
+    id="email-label" 
+    id="email"
+    for="email">Email:</label><br>
+
+    <input 
+    type="email" 
+    id="email"  
+    required 
+    placeholder="johndoe@gmail.com" 
+    name="email"><br>
+
+    <label 
+    id="number-label" 
+    for="number" 
+    id="number">Your Age</label><br>
+
+    <input 
+    type="number" 
+    required 
+    min="2" 
+    max="99" 
+    placeholder="33" 
+    id="number" 
+    placeholder="24"><br>
     <!-- Dropdown -->
     <label>Why did you like tea?</label>
                 <select id="dropdown">
@@ -57,7 +87,7 @@
 <textarea name="additional-comments" rows="10" cols="40">
 Additional comments? Please type here.
     </textarea><p></p><br>
-    <button type="submit" onclick="alert('Thank You!')">Submit</button> 
+    <button type="submit" id="submit" onclick="alert('Thank You!')">Submit</button> 
 </form>
 <footer>
     <span> 2020. Developed by Jesus Ambrocio</span>
