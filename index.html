@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="UTF-8">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Favorite Tea Survey Form</title>
+</head>
+<div class="page">
+    <header>
+    <h1 id="title">
+        What is your favorite tea?
+        </h1>
+        <p id="description">
+            Please kindly fill out the survey below. 
+        </p>
+    </header>
+<body>
+<form id="survey-form">
+    <!-- Name entry  -->
+    <label for="fname">Name:</label><br>
+    <input type="text" id="fname" name="fname"  required="true" placeholder="John Doe"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email"  required="true" placeholder="johndoe@gmail.com" name="email"><br>
+    <label for="name" id="number">Your Age</label><br>
+    <input type="number" required="true" min="17" max="99" placeholder="Age" id="number" placeholder="24"><br>
+    <!-- Dropdown -->
+    <label>Why did you like tea?</label>
+                <select id="dropdown">
+                    <option>Comfort</option>
+                    <option>Taste</option>
+                    <option>Love</option>
+                    <option>Health</option>
+                    <option>Caffeine</option>
+                    <option>Warmth</option>
+                </select><br>
+<!-- Radio buttons -->
+    <label>Where do you drink tea?</label>
+    <ul>
+        <li><input type="checkbox" name="" value="1">Home</li>
+        <li><input type="checkbox" name="" value="2">Shops/Cafe</li>
+        <li><input type="checkbox" name="" value="3">Other</li>
+    </ul>
+<!-- Checkbox -->
+    <label>What do you put in Tea?</label>
+    <ul>
+        <li><input type="radio" name="hear" value="on">Honey</li>
+        <li><input type="radio" name="hear" value="fm">Milk</li>
+        <li><input type="radio" name="hear" value="sm">Nothing</li>
+        <li><input type="radio" name="hear" value="o">Sugar</li>
+    </ul>
+<!-- Text area -->
+<label>Additional Comments</label>
+<textarea name="additional-comments" rows="10" cols="40">
+Additional comments? Please type here.
+    </textarea><p></p><br>
+    <button type="submit" onclick="alert('Thank You!')">Submit</button> 
+</form>
+<footer>
+    <span> 2020. Developed by Jesus Ambrocio</span>
+</footer>
+
+
+</body>
+</div>
+</html>
